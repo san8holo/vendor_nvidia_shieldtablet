@@ -1,0 +1,17 @@
+$(call inherit-product, $(LOCAL_PATH)/boot.mk)
+$(call inherit-product, $(LOCAL_PATH)/nvflash.mk)
+$(call inherit-product, $(LOCAL_PATH)/multimedia.mk)
+$(call inherit-product, $(LOCAL_PATH)/../camera/full.mk)
+$(call inherit-product, $(LOCAL_PATH)/../compute/cuda.mk)
+$(call inherit-product, $(LOCAL_PATH)/../compute/renderscript.mk)
+$(call inherit-product, $(LOCAL_PATH)/../compute/compiler.mk)
+$(call inherit-product, $(LOCAL_PATH)/../graphics/full.mk)
+$(call inherit-product, $(LOCAL_PATH)/../icera/full.mk)
+$(call inherit-product, $(LOCAL_PATH)/../tests/full.mk)
+$(call inherit-product, $(LOCAL_PATH)/../touch/raydium.mk)
+$(call inherit-product, $(LOCAL_PATH)/../touch/synaptics.mk)
+
+PRODUCT_PACKAGES += \
+    bpmp.bin \
+    tegra_xusb_firmware \
+    tegra21x_xusb_firmware
